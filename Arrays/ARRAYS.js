@@ -99,3 +99,4 @@ const findMin = (numbers) => {
 
 const numbers = [3, 7, 2, 9, 4]
 console.log(findMin(numbers))
+
