@@ -60,3 +60,32 @@ const firstCapitilize = (str) => {
 // const str = "javascript"
 // console.log(firstCapitilize(str))
 
+
+// PROBLEM 5
+
+const isAnagram = (str1, str2) => {
+    if (str1.length !== str2.length) return false
+    const charCount1 = {}
+    const charCount2 = {}
+
+    for (let i = 0; i < str1.length; i++) {
+        charCount1[str1[i]] = (charCount1[str1[i]] || 0) + 1
+    }
+
+    for (let i = 0; i < str2.length; i++) {
+        charCount2[str2[i]] = (charCount2[str2[i]] || 0) + 1
+    }
+
+    for (const key in charCount1) {
+        if (charCount1[key] !== charCount2[key]) {
+            return false
+        }
+    }
+    return true
+
+}
+
+const str1 = "integral"
+const str2 = "triangle"
+
+console.log(isAnagram(str1, str2))
