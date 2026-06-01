@@ -80,5 +80,22 @@ const getSum = (numbers) => {
     }
     return sum
 }
-const numbers = [1, 2, 3, 4, 5]
-console.log(getSum(numbers))
+// const numbers = [1, 2, 3, 4, 5]
+// console.log(getSum(numbers))
+
+
+// PROBLEM 7
+
+const findMin = (numbers) => {
+    if (numbers.length === 0) return 0
+    let min = numbers[0]
+    for (const element of numbers) {
+        if (element < min) {
+            min = element
+        }
+    }
+    return min
+}
+
+const numbers = [3, 7, 2, 9, 4]
+console.log(findMin(numbers))
