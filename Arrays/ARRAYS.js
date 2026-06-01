@@ -10,7 +10,7 @@ function printArrayInfo(arr) {
 
 const names = ["Ali", "Sara", "Ahmed", "Zara", "Usman"]
 
-printArrayInfo(names)
+// printArrayInfo(names)
 
 // PROBLEM 2
 
@@ -21,7 +21,7 @@ function printAll(numbers) {
 }
 
 // const numbers = [1, 2, 3, 4, 5]
-printAll(numbers)
+// printAll(numbers)
 
 // PROBLEM 3
 
@@ -38,4 +38,20 @@ const findMax = (arr) => {
 }
 
 // const numbers = [3, 7, 2, 9, 4, 20]
-console.log(findMax(numbers))
+// console.log(findMax(numbers))
+
+// PROBLEM 4 
+
+const findIndex = (numbers, target) => {
+    for (let index = 0; index < numbers.length; index++) {
+        if (numbers[index] === target) {
+            return index
+        }
+    }
+    return -1
+}
+const numbers = [3, 7, 2, 9, 4, 20]
+// console.log(findIndex(numbers, 7))
+// console.log(findIndex(numbers, 9))
+// console.log(findIndex(numbers, 99))
+
