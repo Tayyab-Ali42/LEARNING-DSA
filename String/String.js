@@ -45,3 +45,18 @@ const countVowels = (str) => {
 // const str = "javascript"
 // const str = "hellO"
 // console.log(countVowels(str))
+
+// PROBLEM 4
+
+const firstCapitilize = (str) => {
+    const firstChar = str[0].toUpperCase()
+    let restOfStr = ""
+    for (let index = 1; index < str.length; index++) {
+        restOfStr += str[index]
+    }
+    return firstChar + restOfStr
+}
+
+// const str = "javascript"
+// console.log(firstCapitilize(str))
+
