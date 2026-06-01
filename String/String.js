@@ -27,3 +27,21 @@ function isPalindrome(str) {
 // console.log(isPalindrome("hello"))
 // console.log(isPalindrome("racecar"))
 // console.log(isPalindrome("madam"))
+
+// PROBLEM 3
+
+
+const countVowels = (str) => {
+    const vowels = "aeiou"
+    let count = 0
+    for (const element of str) {
+        if (vowels.includes(element.toLowerCase())) {
+            count++
+        }
+    }
+    return count
+}
+
+// const str = "javascript"
+// const str = "hellO"
+// console.log(countVowels(str))
