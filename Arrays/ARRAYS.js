@@ -20,6 +20,22 @@ function printAll(numbers) {
     }
 }
 
-const numbers = [1, 2, 3, 4, 5]
+// const numbers = [1, 2, 3, 4, 5]
 printAll(numbers)
 
+// PROBLEM 3
+
+const findMax = (arr) => {
+    let max = arr[0]
+
+    for (const number of arr) {
+        if (number > max) {
+            max = number
+        }
+    }
+    return max
+
+}
+
+// const numbers = [3, 7, 2, 9, 4, 20]
+console.log(findMax(numbers))
