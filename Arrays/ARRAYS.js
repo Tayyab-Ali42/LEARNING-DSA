@@ -50,8 +50,21 @@ const findIndex = (numbers, target) => {
     }
     return -1
 }
-const numbers = [3, 7, 2, 9, 4, 20]
+// const numbers = [3, 7, 2, 9, 4, 20]
 // console.log(findIndex(numbers, 7))
 // console.log(findIndex(numbers, 9))
 // console.log(findIndex(numbers, 99))
 
+
+// PROBLEM 5
+
+const reverseArray = (arr) => {
+    let reversedArray = []
+    for (let index = arr.length - 1; index >= 0; index--) {
+        reversedArray.push(arr[index])
+    }
+    return reversedArray
+}
+
+const numbers = [3, 7, 2, 9, 4]
+console.log(reverseArray(numbers))
