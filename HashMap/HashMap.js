@@ -19,6 +19,8 @@ const TwoSum = (numbers, target) => {
 // const target = 9
 // console.log(TwoSum(numbers, target))
 
+// PROBLEM 2
+
 
 const findDuplicates = (numbers) => {
     let seen = new Map()
@@ -41,3 +43,22 @@ const findDuplicates = (numbers) => {
 
 // const numbers = [1, 2, 3, 1, 5, 1, 4, 2, 5, 5]
 // console.log(findDuplicates(numbers))
+
+// PROBLEM 3
+
+const firstUniqueChar = (str) => {
+    let map = new Map()
+
+    for (let index = 0; index < str.length; index++) {
+        map.set(str[index], (map.get(str[index]) || 0) + 1)
+    }
+
+    for (let index = 0; index < str.length; index++) {
+        if (map.get(str[index]) === 1) {
+            return index
+        }
+    }
+}
+
+// const str = "leetcode"
+// console.log(firstUniqueChar(str))
